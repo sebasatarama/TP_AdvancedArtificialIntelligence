@@ -21,6 +21,8 @@ Tomemos el caso del espacio de solución: \
 2 2 \
 0 10 1 10 \
 0 10 1 20 \
-Pero esta vez, con un tiempo máximo de 40 ms.
+También con un tiempo máximo de 60 ms. \
+![image](images/Busqueda.JPG) \
+Esta "Solución" no es correcta, ya que nos pasamos del tiempo indicado.
 
 
