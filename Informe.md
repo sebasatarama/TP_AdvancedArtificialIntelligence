@@ -12,7 +12,7 @@ Para una instancia como esta:\
 0 10 1 10 \
 0 10 1 20 \
 y con un tiempo de ejecución máximo de 50 ms, esta podría ser una solución: \
-![image](images/Solucion.JPG) \
+![](images/Solucion.JPG) \
 Se puede observar que en este caso se ralizaron 4 operaciones en total, maximizando lo que se busca. Recordemos que aunque se pueda hacer en menos tiempo, no nos interesa en este problema. Nuestro único objetivo es lograr terminar la mayor cantidad de operaciones en un tiempo concreto.
 ## Espacio de búsqueda
 Así como en el jssp, este problema tiene restricciones. Y no todas las "soluciones" estarán conrrectas.
@@ -22,7 +22,19 @@ Tomemos el caso del espacio de solución:
 0 10 1 10 \
 0 10 1 20 \
 También con un tiempo máximo de 60 ms. \
-![image](images/Busqueda.JPG) \
+![](images/Busqueda.JPG) \
 Esta "solución" no es correcta, ya que nos pasamos del tiempo indicado.
+## Resultados
+El código corrió durante 3 minutos, haciendo uso del algoritmo random sampling. Este algoritmo obitiene soluciones aleatorias hasta que finalmente nos quedamos con la mejor solución obtenida. 
+### Schedule
+Después de correr los 3 minutos, y con un límite de tiempo de 1 segundo para que los procesadores realizen sus operaciones, este fue el "schedule" obtenido. \
+![](images/schedule.JPG) \
+Se puede observar que ningún trabajo es realizado cuando se sabe que pasará el segundo, o 1000 ms. Nuestro mejor resultado fueron 277 operaciones en un minuto, con una media de 198, una mediana de 199 y una desviación estándar de 20.26 aproximadamente. 
+### Variación durante el tiempo
+Ahora, veamos como fueron cambiando los resultados durante los tres minutos: \
+![](images/results.png) \
+Al ser un algoritmo que funciona con valores aleatorios, se oberva mucho ruido en los resultados. Tambíen se pueden observar los puntos mas altos, representando los mejores resultados.
+
+
 
 
